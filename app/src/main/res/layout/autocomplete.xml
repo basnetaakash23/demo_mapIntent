@@ -1,0 +1,31 @@
+<LinearLayout android:id="@+id/searchInputLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="6dip"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="searchMessage" />
+    <EditText android:id="@+id/freetextInput"
+        android:hint="searchFreetextLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background" />
+    <CheckBox android:id="@+id/includeVincinityCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="includeVincinityLabel"
+        android:checked="true"
+        android:onClick="includeVincinityClick" />
+    <AutoCompleteTextView android:id="@+id/locationInput"
+        android:hint="locationInputHint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <Button android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="searchBtnLabel"
+        android:onClick="searchBtnClicked" />
+</LinearLayout>
